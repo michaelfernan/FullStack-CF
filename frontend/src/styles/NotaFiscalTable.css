@@ -1,0 +1,231 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 255px;
+    height: 53px;
+    left: 336px;
+    top: 104px;
+}
+
+.header-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.header-text {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 24px;
+    color: #021B51;
+}
+
+.header-subtext {
+    font-family: 'DM Sans';
+    font-size: 14px;
+    color: #6c757d;
+    margin-top: 10px;
+    position: absolute;
+    left: 335px;
+    top: 126px;
+    z-index: 1000;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.container-tabela {
+    width: 100%;
+    padding: 0px;
+}
+
+.table-container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 1px;
+    position: absolute;
+    width: 1077px;
+    height: 214px;
+    left: 330px;
+    top: 160px;
+}
+
+.b-button {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.b-button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr 1.4fr 195px;
+    gap: 15px;
+    margin-bottom: 19px;
+    border-bottom: none;
+}
+
+.header-item {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #a1a8b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: none;
+
+
+}
+
+.table-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr 1.4fr 165px;
+    gap: 15px;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 15px;
+    background: #ffffff;
+    height: 48px;
+    border: 1px solid #dfe2eb;
+    border-radius: 6px;
+}
+
+.table-nf,
+.table-emet,
+.table-provider,
+.table-emission,
+.table-but {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    align-items: center;
+    border-bottom: none;
+}
+
+.table-but {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: 32px;
+    border: 1px solid #cad3ff;
+    border-radius: 24px;
+    color: #727d94;
+    cursor: pointer;
+}
+
+.table-value,
+.table-status {
+    color: #00ad8c !important;
+    font-weight: bold;
+    color: #00ad8c;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    align-items: center !important;
+    border-bottom: none;
+
+}
+.loader {
+    position: relative;
+    width: 2.5em;
+    height: 2.5em;
+    transform: rotate(165deg);
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 0.25em;
+    transform: translate(-50%, -50%);
+}
+
+.loader:before {
+    animation: before8 2s infinite;
+}
+
+.loader:after {
+    animation: after6 2s infinite;
+}
+
+@keyframes before8 {
+    0% {
+        width: 0.5em;
+        box-shadow: 1em -0.5em rgba(10, 231, 66, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+
+    35% {
+        width: 2.5em;
+        box-shadow: 0 -0.5em rgba(10, 231, 66, 0.75),, 0 0.5em rgba(111, 202, 220, 0.75);
+    }
+
+    70% {
+        width: 0.5em;
+        box-shadow: -1em -0.5em rgba(10, 231, 66, 0.75),, 1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+
+    100% {
+        box-shadow: 1em -0.5em rgba(10, 231, 66, 0.75),, -1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+}
+
+@keyframes after6 {
+    0% {
+        height: 0.5em;
+        box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(17, 2, 70, 0.75);
+    }
+
+    35% {
+        height: 2.5em;
+        box-shadow: 0.5em 0 rgba(61, 184, 143, 0.75), -0.5em 0 rgba(17, 2, 70, 0.75);
+    }
+
+    70% {
+        height: 0.5em;
+        box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75), -0.5em 1em rgba(17, 2, 70, 0.75);
+    }
+
+    100% {
+        box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(17, 2, 70, 0.75);
+    }
+}
+
+.loader {
+    position: absolute;
+    top: calc(50% - 1.25em);
+    left: calc(50% - 1.25em);
+}

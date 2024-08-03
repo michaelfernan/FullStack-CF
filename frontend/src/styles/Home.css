@@ -1,0 +1,21 @@
+
+.h-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.h-content-container {
+  text-align: center;
+}
+
+.home {
+  margin: 0 auto;
+}
+
+.imagem {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 20px;
+}
