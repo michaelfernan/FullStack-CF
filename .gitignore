@@ -28,10 +28,6 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Docker
-docker-compose.override.yml
-docker-compose.override.yaml
-Dockerfile
 
 # Arquivos temporários
 *.tmp

@@ -9,7 +9,7 @@ const sequelize = new Sequelize(database, username, password, {
   host,
   port,
   dialect,
-  logging: false, // Set to true to see SQL queries in the console
+  logging: false,
 });
 
 sequelize.authenticate()

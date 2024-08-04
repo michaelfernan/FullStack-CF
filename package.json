@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "docker-compose -f ./docker-compose.yml up --build"
+    "install-all": "cd backend && npm install && cd ../frontend && npm install",
+    "start": "docker-compose -f ./docker-compose.yml up --build",
+    "start-db": "docker-compose -f ./docker-compose.yml up -d db",
+    "start-backend": "cd backend && npm start",
+    "start-frontend": "cd frontend && npm start",
+    "start-local": "npm run start-db && npm run start-backend && npm run start-frontend",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
