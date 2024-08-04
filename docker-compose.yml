@@ -15,6 +15,17 @@ services:
     networks:
       - my_network
   
+  backend:
+    build:
+      context: ./backend
+    container_name: backend
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=mysql://root:password@db:3306/cashforce_v3
+    networks:
+      - my_network
+
 networks:
   my_network:
 
