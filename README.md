@@ -8,8 +8,9 @@
 
 ### Clone o repositório usando o Git:
 
-### git clone https://github.com/yourusername/FullStack-CF.git
+### git clone https://github.com/michaelfernan/FullStack-CF.git
 ### cd FullStack-CF
+
 ### 2. Instalar as Dependências
 ### Certifique-se de ter o Node.js e o Docker instalados em sua máquina. Instale as dependências do backend e do frontend:
 
@@ -63,5 +64,5 @@
 ### Para mais informações, consulte a documentação específica de cada parte do projeto ou entre em contato com o desenvolvedor.
 
 ### 📄 Notas Adicionais
-### Substitua https://github.com/yourusername/FullStack-CF.git pelo URL real do seu repositório.
+### Substitua git@github.com:michaelfernan/FullStack-CF.git pelo URL real do seu repositório.
 ### Verifique se o nome dos serviços, portas e caminhos estão corretos de acordo com a sua configuração. Ajuste conforme necessário.
