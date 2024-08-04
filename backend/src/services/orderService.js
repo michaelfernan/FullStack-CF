@@ -1,5 +1,17 @@
 const { Order, Buyer, Provider, Cnpj, User } = require('../database/models');
 
+const statusMapping = [
+  'Pendente de confirmação',
+  'Pedido confirmado',
+  'Não reconhece o pedido',
+  'Mercadoria não recebida',
+  'Recebida com avaria',
+  'Devolvida',
+  'Recebida com devolução parcial',
+  'Recebida e confirmada',
+  'Pagamento Autorizado'
+];
+
 const ordersService = {
   getAllOrders: async () => {
     try {
@@ -11,7 +23,13 @@ const ordersService = {
           { model: User, as: 'user', attributes: ['name'] },
         ],
       });
-      return ordersList;
+
+      const ordersWithStatusText = ordersList.map(order => ({
+        ...order.toJSON(),
+        orderStatusText: statusMapping[order.orderStatusBuyer]
+      }));
+
+      return ordersWithStatusText;
     } catch (error) {
       console.error('Erro ao buscar todas as ordens:', error);
       throw new Error('Erro ao buscar todas as ordens');
@@ -28,7 +46,16 @@ const ordersService = {
           { model: User, as: 'user', attributes: ['name'] },
         ],
       });
-      return order;
+
+      if (order) {
+        const orderWithStatusText = {
+          ...order.toJSON(),
+          orderStatusText: statusMapping[order.orderStatusBuyer]
+        };
+        return orderWithStatusText;
+      } else {
+        return null;
+      }
     } catch (error) {
       console.error(`Erro ao buscar a ordem com ID ${id}:`, error);
       throw new Error('Erro ao buscar a ordem');

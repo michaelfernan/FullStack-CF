@@ -28,7 +28,7 @@
               <td class="table-provider">{{ nota.provider.name }}</td>
               <td class="table-emission">{{ nota.emissionDate }}</td>
               <td class="table-value">{{ nota.value }}</td>
-              <td class="table-status">{{ nota.orderStatusProvider }}</td>
+              <td class="table-status">{{ nota.orderStatusText }}</td>
               <td class="table-but">
                 <b-button @click="openProviderModal(nota.providerId)" variant="outline-primary">{{ nota.acao }}</b-button>
               </td>
@@ -76,7 +76,7 @@ export default {
           providerId: nota.providerId,
           emissionDate: new Date(nota.emissionDate).toLocaleDateString(),
           value: `R$ ${(nota.value / 100).toFixed(2)}`,
-          orderStatusProvider: nota.orderStatusProvider === "0" ? 'Pendente' : 'Concluído',
+          orderStatusText: nota.orderStatusText,
           acao: 'Dados do cedente'
         }));
 
