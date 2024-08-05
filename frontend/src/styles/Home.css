@@ -1,21 +1,48 @@
 
+.layout-container {
+  display: flex;
+}
+
+
+.h-main-content {
+  margin-left: 160px; 
+  padding-top: 20px; 
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .h-container {
+  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  padding: 20px;
 }
 
 .h-content-container {
   text-align: center;
+  background: none;
 }
 
-.home {
+.h-home {
   margin: 0 auto;
 }
 
-.imagem {
+.h-imagem {
   width: 100%;
   max-width: 300px;
   margin-top: 20px;
+  background: none;
+}
+.h-bem-vindo {
+  width: 100%;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #021B51;
+  margin-bottom: 20px;
+  text-align: center;
 }
