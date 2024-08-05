@@ -1,5 +1,6 @@
 <template>
-  <header class="navbar">
+  <header class="navbar navbar-expand-lg navbar-light bg-light">
+  
   </header>
 </template>
 
