@@ -1,16 +1,18 @@
 <template>
   <div>
-    <div >
-      <SidebarComponent />
+       <div class="layout-container">
+      <aside>
+        <SidebarComponent />
+      </aside>
       <main class="h-main-content">
-        <div class="h-container">
-          <div class="h-content-container">
+        <section class="h-container">
+          <article class="h-content-container">
             <div class="h-home">
-              <h1 class="h-bem-vindo">Bem-vindo à </h1>
+              <h1 class="h-bem-vindo">Bem-vindo à</h1>
               <img :src="imagem" alt="Logo da empresa" class="h-imagem" />
             </div>
-          </div>
-        </div>
+          </article>
+        </section>
       </main>
     </div>
   </div>
@@ -24,8 +26,7 @@ export default {
   name: 'HomePage',
   components: {
     SidebarComponent,
-
-  },
+   },
   data() {
     return {
       imagem: require('@/assets/Logo-home.jpeg'),

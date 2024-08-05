@@ -1,9 +1,11 @@
 <template>
-  <div class="main-container">
-    <div class="content-container">
-      <NotaFiscalTable />
-    </div>
-  </div>
+  <main>
+    <section>
+      <article>
+        <NotaFiscalTable />
+      </article>
+    </section>
+  </main>
 </template>
 
 <script>
@@ -12,7 +14,6 @@ import NotaFiscalTable from '../components/NotaFiscalTable.vue'
 export default {
   name: 'NotasFiscais',
   components: {
-
     NotaFiscalTable,
   },
 }
