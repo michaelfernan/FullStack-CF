@@ -58,8 +58,8 @@ module.exports = {
         phoneNumber: null,
         situation: null,
         situationDate: null,
-        createdAt: new Date('2020-10-29 21:22:21'),
-        updatedAt: new Date('2020-10-29 21:22:22'),
+        createdAt: new Date('2024-08-08 21:22:21'),
+        updatedAt: new Date('2024-08-08 21:22:22'),
         cnpjId: 2,
         email:'TEST@TEST03.com.br',
       }
