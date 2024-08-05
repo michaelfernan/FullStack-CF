@@ -30,13 +30,10 @@
     margin-top: 10px;
     position: absolute;
     left: 335px;
-    top: 126px;
+    top: 125px;
     z-index: 1000;
 }
 
-.card {
-    margin-top: 20px;
-}
 
 .container-tabela {
     width: 100%;
@@ -51,18 +48,19 @@
     padding: 0px;
     gap: 1px;
     position: absolute;
-    width: 1077px;
+    width: 1180px;
     height: 214px;
     left: 330px;
-    top: 160px;
+    top: 170px;
 }
 
 .table-header {
     display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr 1.4fr 195px;
-    gap: 15px;
+    grid-template-columns: 1.3fr 1.1fr 1fr 1fr 1fr 1.7fr 195px;
+    gap: 30px;
     margin-bottom: 19px;
     border-bottom: none;
+    text-align: right; 
 }
 
 .header-item {
@@ -83,7 +81,7 @@
 .table-body {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
 }
 
 .table-row {
@@ -149,6 +147,7 @@
     line-height: 18px;
     align-items: center !important;
     border-bottom: none;
+    
 
 }
 .loader {
