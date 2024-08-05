@@ -4,7 +4,6 @@
     z-index: -1;
   }
   
-  /* Ajustes adicionais para responsividade */
   @media (max-width: 768px) {
     .navbar {
       height: 60px;
