@@ -18,5 +18,3 @@ export default {
   },
 }
 </script>
-
-<style src="@/styles/NotasFiscais.css"></style>
