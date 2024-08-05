@@ -1,4 +1,7 @@
 <template>
+   <aside>
+        <SidebarComponent />
+      </aside>
   <section class="container-tabela">
     <header class="header">
       <img :src="iconTable" alt="Ícone" class="header-icon" />
@@ -43,10 +46,13 @@
 <script>
 import { fetchNotas, fetchProviderData } from '@/services/api';
 import ProviderModal from './ProviderModal.vue';
+import SidebarComponent from './SidebarComponent.vue';
+
 
 export default {
   components: {
     ProviderModal,
+    SidebarComponent,
   },
   data() {
     return {
