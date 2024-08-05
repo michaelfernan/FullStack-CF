@@ -64,5 +64,5 @@
 ### Para mais informações, consulte a documentação específica de cada parte do projeto ou entre em contato com o desenvolvedor.
 
 ### 📄 Notas Adicionais
-### Substitua git@github.com:michaelfernan/FullStack-CF.git pelo URL real do seu repositório.
+
 ### Verifique se o nome dos serviços, portas e caminhos estão corretos de acordo com a sua configuração. Ajuste conforme necessário.
